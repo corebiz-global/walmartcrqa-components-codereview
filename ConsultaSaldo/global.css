@@ -1,0 +1,15 @@
+.iframe-consulta-saldo {
+  border: none;
+  width: 100%;
+}
+
+.back-div-landings {
+  font-size: 18px;
+  text-decoration: none;
+  color: #0170ce;
+  font-weight: 600;
+}
+
+.back-div-landings:hover {
+  text-decoration: underline;
+}

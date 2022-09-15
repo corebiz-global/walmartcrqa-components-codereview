@@ -1,0 +1,87 @@
+{
+  "button-add-to-carx": {
+    "component": "ModalAddToCar"
+  },
+  "sub-categories": {
+    "component": "Subcategories"
+  },
+  "quantity-selector": {
+    "component": "QuantitySelectorSummary"
+  },
+  "quantity-selector.summary": {
+    "component": "QuantitySelectorSummary"
+  },
+  "quantity-selector.pdp": {
+    "component": "QuantitySelectorPdp"
+  },
+  "quantity-selector.minicart": {
+    "component": "QuantitySelectorMiniCart"
+  },
+  "order-placed": {
+    "component": "OrderPlaced"
+  },
+  "minicart-totalizer": {
+    "component": "MinicartTotalizer"
+  },
+  "empty-car": {
+    "component": "EmptyCar"
+  },
+  "last-cart": {
+    "component": "LastCart",
+    "allowed": ["flex-layout.row", "list-context.product-list-static"]
+  },
+  "subtotal-content": {
+    "component": "Subtotal"
+  },
+  "price-custom": {
+    "component": "Price"
+  },
+  "global-promo": {
+    "component": "GlobalPromo"
+  },
+  "properties-my-account": {
+    "component": "MyAccountCustom"
+  },
+  "format-prices": {
+    "component": "FormatPrices"
+  },
+  "trade-policy-check": {
+    "component": "TradePolicyCheck"
+  },
+  "msi-check": {
+    "component": "Msi"
+  },
+  "countdown-component":{
+    "component":"Countdown"
+  },
+  "btn-component":{
+    "component":"CreditCardBtn"
+  },
+  "btn-electronict-card":{
+    "component":"ElectronicCard"
+  },
+  "ifram-electronict-card":{
+    "component":"IframeElectronicCard"
+  },
+  "check-informative": {
+    "component": "CheckBoxInformative"
+  },
+  "highlight-custom": {
+    "component": "HighlightCustom"
+  },
+  "online-exclusive": {
+    "component": "OnlineExclusive"
+  },
+  "feature-pdp": {
+    "component": "FeatureProduct"
+  },
+  "free-shipping": {
+    "component": "FreeShipping"
+  },
+  "consulta-saldo":{
+    "component": "ConsultaSaldo"
+  },
+  "egiftcard":{
+    "component": "Egiftcard"
+  }
+}
