@@ -1,0 +1,190 @@
+{
+    "store.custom#landing-tarjetas": {
+      "blocks": [
+    "responsive-layout.desktop#landing-tarjetas",
+      "responsive-layout.mobile#landing-tarjetas"
+
+      ]
+    },
+    "responsive-layout.mobile#landing-tarjetas": {
+      "children": [
+        "flex-layout.row#landing-tarjetas-mobile"
+      ]
+    },
+    "flex-layout.row#landing-tarjetas-mobile": {
+      "children": [
+        "flex-layout.col#landing-tarjetas-mobile"
+      ],
+      "props": {
+        "blockClass": "landing-tarjetas"
+      }
+    },
+    "flex-layout.col#landing-tarjetas-mobile": {
+      "children": [
+        "image#tarjeta-regalo-banner-mobile",
+        "rich-text#title-tarjeta-regalo",
+        "rich-text#btn-tarjeta-regalo",
+        "rich-text#subtitle-tarjeta-regalo",
+        "rich-text#title-tarjeta-fisica",
+        "rich-text#btn-tarjeta-fisica",
+        "rich-text#subtitle-tarjeta-fisica",
+        "rich-text#title-tarjeta-electronica",
+        "rich-text#btn-tarjeta-electronica",
+        "rich-text#subtitle-tarjeta-electronica"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "landing-tarjetas-mobile"
+      }
+    },
+     "image#tarjeta-regalo-banner-mobile": {
+      "props": {
+        "src": "assets/tarjeta-de-regalo/regalo_desktop.jpg"
+      }
+    },
+  
+    
+    "responsive-layout.desktop#landing-tarjetas": {
+      "children": [
+        "flex-layout.row#landing-tarjetas"
+      ]
+    },
+    "flex-layout.row#landing-tarjetas": {
+      "children": [
+        "flex-layout.col#landing-tarjetas"
+      ],
+      "props": {
+        "blockClass": "landing-tarjetas"
+      }
+    },
+    "flex-layout.col#landing-tarjetas": {
+      "children": [
+        "flex-layout.col#landing-tarjetas-banner",
+         "flex-layout.row#landing-tarjetas-part2"
+        // "flex-layout.row#tarjeta-regalo-linea3"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": ""
+      }
+    },
+  
+    "flex-layout.col#landing-tarjetas-banner": {
+      "children": [
+        "image#banner-top"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": ""
+      }
+    },
+    "image#banner-top": {
+      "props": {
+        "src": "assets/tarjeta-de-regalo/banner_regalo_desktop.jpg"
+      }
+    },
+    "flex-layout.row#landing-tarjetas-part2": {
+      "children": [
+        "flex-layout.col#btn-tarjeta-regalo",
+         "flex-layout.col#btn-tarjeta-fisica",
+         "flex-layout.col#tarjeta-electronica"
+      ],
+      "props": {
+        "blockClass": "landing-tarjetas",
+        "preventHorizontalStretch":false
+      }
+    },
+  
+    "flex-layout.col#btn-tarjeta-regalo": {
+      "children": [
+        "rich-text#title-tarjeta-regalo",
+        "rich-text#btn-tarjeta-regalo",
+        "rich-text#subtitle-tarjeta-regalo"
+      ],
+      "props": {
+        "preventVerticalStretch": true,
+        "blockClass": "btns-tarjetas"
+      }
+    },
+    "rich-text#title-tarjeta-regalo": {
+      "props": {
+        "text": "Tarjeta de regalo Física e institucional",
+        "blockClass": "landing-titulo"
+      }
+    },
+    "rich-text#btn-tarjeta-regalo": {
+        "props": {
+          "text": "<a href='/tarjeta-de-regalo'>Ver tarjeta de regalo</a>",
+          "blockClass": "landing-btn"
+        }
+      },
+      "rich-text#subtitle-tarjeta-regalo": {
+        "props": {
+          "text": "¡Convierte todo lo de nuestras tiendas en un regalo!",
+          "blockClass": "landing-subtitle"
+        }
+      },
+      "flex-layout.col#btn-tarjeta-fisica": {
+        "children": [
+          "rich-text#title-tarjeta-fisica",
+          "btn-component",
+          
+          //"rich-text#btn-tarjeta-fisica",
+          "rich-text#subtitle-tarjeta-fisica"
+        ],
+        "props": {
+          "preventVerticalStretch": true,
+          "blockClass": "btns-tarjetas"
+        }
+      },
+      "rich-text#title-tarjeta-fisica": {
+        "props": {
+          "text": "Consulta tarjeta física  ",
+          "blockClass": ["landing-titulo","title-tarjeta-fisica"]
+        }
+      },
+      "rich-text#btn-tarjeta-fisica": {
+          "props": {
+            "text": "<a href='/#' class='btn-tarjeta'>Consulta saldo </a>",
+            "blockClass": "landing-btn"
+          }
+        },
+        "rich-text#subtitle-tarjeta-fisica": {
+          "props": {
+            "text": "Es fácil y rápido",
+            "blockClass": "landing-subtitle"
+          }
+        },
+        "flex-layout.col#tarjeta-electronica": {
+            "children": [
+              "rich-text#title-tarjeta-electronica",
+              "btn-electronict-card",
+             // "rich-text#btn-tarjeta-electronica",
+              "rich-text#subtitle-tarjeta-electronica"
+            ],
+            "props": {
+              "preventVerticalStretch": true,
+              "blockClass": "btns-tarjetas"
+            }
+          },
+          "rich-text#title-tarjeta-electronica": {
+            "props": {
+              "text": "Tarjeta de regalo electrónica",
+              "blockClass": ["landing-titulo","tarjeta-electronica"]
+            }
+          },
+          "rich-text#btn-tarjeta-electronica": {
+              "props": {
+                "text": "<a href='/#'>Ver tarjeta electrónica</a>",
+                "blockClass": "landing-btn"
+              }
+            },
+            "rich-text#subtitle-tarjeta-electronica": {
+              "props": {
+                "text": "¡Una experiencia única digital pagando en cajas con tu e-giftcard!",
+                "blockClass": "landing-subtitle"
+              }
+            }
+
+   
+}

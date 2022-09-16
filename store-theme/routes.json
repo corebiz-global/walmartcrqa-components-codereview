@@ -1,0 +1,89 @@
+{
+  "store.custom#discount": {
+    "path": "/rebajas"
+  },
+  "store.custom#baby-world": {
+    "path": "/mundo-bebe"
+  },
+  "store.custom#walmart-pharmacy": {
+    "path": "/farmacias-Walmart"
+  },
+  "store.custom#pet-world": {
+    "path": "/Mundo-Mascotas"
+  },
+  "store.custom#mundo-navidad": {
+    "path": "/mundo-navidad"
+  },
+  "store.custom#unidos": {
+    "path": "/unidos-por-tu-bienestar"
+  },
+  "store.custom#family-size": {
+    "path": "/tamanos-familiares"
+  },
+  "store.custom#our-brands": {
+    "path": "/nuestras-marcas"
+  },
+  "store.custom#terminos-y-condiciones-de-compra": {
+    "path": "/terminos-y-condiciones-de-compra"
+  },
+  "store.custom#aviso-de-privacidad-ecommerce": {
+    "path": "/aviso-de-privacidad-ecommerce"
+  },
+  "store.custom#reglamento-de-promociones": {
+    "path": "/reglamento-de-promociones"
+  },
+  "store.custom#como-comprar": {
+    "path": "/como-comprar"
+  },
+  "store.custom#shop-store": {
+    "path": "/localizador-de-tiendas"
+  },
+  "store.custom#servicios-financieros": {
+    "path": "/servicios-financieros"
+  },
+  "store.custom#tarjeta-credito": {
+    "path": "/tarjeta-de-credito"
+  },
+  "store.custom#tarjeta-regalo": {
+    "path": "/tarjeta-de-regalo-fisica"
+  },
+  "store.custom#remesas": {
+    "path": "/remesas"
+  },
+  "store.custom#pago-servicios": {
+    "path": "/pago-de-servicios"
+  },
+  "store.custom#covid-store-lp": {
+    "path": "/acciones-contra-el-covid-19"
+  },
+  "store.custom#preguntas-frecuentes": {
+    "path": "/preguntas-frecuentes"
+  },
+  "store.custom#walmart-te-escucha": {
+    "path": "/walmart-te-escucha"
+  },
+  "store.custom#financiamiento": {
+    "path": "/financiamiento"
+  },
+  "store.custom#construction": {
+    "path": "/construccion"
+  },
+  "store.custom#landing-tarjetas": {
+    "path": "/landing-tarjetas"
+  },
+  "store.custom#consultar-saldo": {
+    "path": "/consultar-saldo"
+  },
+  "store.custom#tarjeta-electronica": {
+    "path": "/e-giftcard"
+  },
+  "store.custom#super-parrilleros": {
+    "path": "/mundo-mascotas-nuevo"
+  },
+  "store.custom#beauty-world": {
+    "path": "/feria-de-belleza"
+  },
+  "store.custom#comercial": {
+    "path": "/comercial"
+  }
+}
