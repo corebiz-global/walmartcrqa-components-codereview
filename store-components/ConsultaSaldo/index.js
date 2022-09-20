@@ -13,7 +13,7 @@ const ConsultaSaldo = () => {
 
   const { loading, session } = useRenderSession()
 
-  const getCookie = useCallback((cookieName) => {
+  const getCookie = useCallback(cookieName => {
     let cookie = {}
     document.cookie.split(';').forEach(function (el) {
       let [key, value] = el.split('=')
@@ -23,27 +23,32 @@ const ConsultaSaldo = () => {
   }, [])
 
   useEffect(() => {
-    if (session && session?.namespaces?.profile?.isAuthenticated?.value === 'false') {
+    if (
+      session &&
+      session?.namespaces?.profile?.isAuthenticated?.value === 'false'
+    ) {
       location.href = '/login?returnUrl=/consulta-saldo'
     }
   }, [session])
 
   useEffect(() => {
-    if (session && session?.namespaces?.profile?.isAuthenticated?.value === 'true') {
+    if (
+      session &&
+      session?.namespaces?.profile?.isAuthenticated?.value === 'true'
+    ) {
       const myCookie = getCookie('_ga_M0GBJYGMZ0')
       if (myCookie !== undefined) {
-        fetch('https://api.binq.stg.walmart.com/health',
-          {
-            method: 'GET',
-            // mode: 'no-cors',
-            headers: new Headers({
-                'Content-Type': 'application/json',
-                // "Content-Type": "text/plain",
-                'Access-Control-Allow-Origin': '*',
-            })
-          }
-        )
-        // fetch(`https://web.binq.stg.walmart.com/health?_ga_M0GBJYGMZ0=${myCookie}`)
+        fetch('https://api.binq.stg.walmart.com/health', {
+          method: 'GET',
+          // mode: 'no-cors',
+          headers: new Headers({
+            'Content-Type': 'application/json',
+            // "Content-Type": "text/plain",
+            'Strict-Transport-Security': 'max-age=31536000; includeSubDomains',
+            'Access-Control-Allow-Origin': '*',
+          }),
+        })
+          // fetch(`https://web.binq.stg.walmart.com/health?_ga_M0GBJYGMZ0=${myCookie}`)
           .then(resp => resp.json())
           .then(resp => {
             console.log('health->>', resp)
@@ -51,23 +56,25 @@ const ConsultaSaldo = () => {
               setSessionCookie(myCookie)
               setHealthIframe(true)
             }
-          }).catch((error) => {
+          })
+          .catch(error => {
             console.log('health->>', error)
             setHealthIframe(false)
             setSessionCookie(null)
-          }).finally(() => setloadingIframe(true))
-      }
-      else setHealthIframe(false)
+          })
+          .finally(() => setloadingIframe(true))
+      } else setHealthIframe(false)
     }
   }, [getCookie, session])
-
 
   if (!loadingIframe || loading) {
     return (
       <EmptyState>
         <div className="mv9">
-          <span className='t-heading-4'>Consulta de saldo...</span>
-          <p><Spinner size={24} /></p>
+          <span className="t-heading-4">Consulta de saldo...</span>
+          <p>
+            <Spinner size={24} />
+          </p>
         </div>
       </EmptyState>
     )
@@ -77,32 +84,39 @@ const ConsultaSaldo = () => {
 
   return (
     <>
-      {!healthIframe
-        ?
+      {!healthIframe ? (
         <EmptyState>
           <div className="mv9 felx flex-column">
-            <div className='w-100 pa3'>
-              <img src='/arquivos/conexion_rota.png' />
+            <div className="w-100 pa3">
+              <img src="/arquivos/conexion_rota.png" />
             </div>
             <div className="w-100 pa3" style={{ color: 'black' }}>
-              <span className='t-heading-4'>Vuelve a intentarlo más tarde.</span>
+              <span className="t-heading-4">
+                Vuelve a intentarlo más tarde.
+              </span>
             </div>
             <div class="w-40 pa3 center">
-              <Button href='/landing-tarjetas'>Aceptar</Button>
+              <Button href="/landing-tarjetas">Aceptar</Button>
             </div>
           </div>
         </EmptyState>
-        :
-
-        <div className='flex flex-column'>
+      ) : (
+        <div className="flex flex-column">
           <>
-            <a className="flex items-center back-div-landings" href="/landing-tarjetas">
+            <a
+              className="flex items-center back-div-landings"
+              href="/landing-tarjetas"
+            >
               <span className="mr3">
-                <img src="https://walmartcrqa.vtexassets.com/assets/vtex/assets-builder/walmartcrqa.store-theme/1.0.78/tarjeta-de-regalo/arrow_button___bbe975aefcdcdc9f3d441c478d0e2f5c.svg" alt="arrow" className="" crossorigin="anonymous" width='18' />
+                <img
+                  src="https://walmartcrqa.vtexassets.com/assets/vtex/assets-builder/walmartcrqa.store-theme/1.0.78/tarjeta-de-regalo/arrow_button___bbe975aefcdcdc9f3d441c478d0e2f5c.svg"
+                  alt="arrow"
+                  className=""
+                  crossorigin="anonymous"
+                  width="18"
+                />
               </span>
-              <p className='back-landings'>
-                Regresar
-              </p>
+              <p className="back-landings">Regresar</p>
             </a>
           </>
 
@@ -115,7 +129,7 @@ const ConsultaSaldo = () => {
             position="relative"
           />
         </div>
-      }
+      )}
     </>
   )
 }
