@@ -45,7 +45,7 @@
     "path": "/tarjeta-de-credito"
   },
   "store.custom#tarjeta-regalo": {
-    "path": "/tarjeta-de-regalo-fisica"
+    "path": "/tarjeta-de-regalo"
   },
   "store.custom#remesas": {
     "path": "/remesas"
@@ -68,15 +68,6 @@
   "store.custom#construction": {
     "path": "/construccion"
   },
-  "store.custom#landing-tarjetas": {
-    "path": "/landing-tarjetas"
-  },
-  "store.custom#consultar-saldo": {
-    "path": "/consultar-saldo"
-  },
-  "store.custom#tarjeta-electronica": {
-    "path": "/e-giftcard"
-  },
   "store.custom#super-parrilleros": {
     "path": "/mundo-mascotas-nuevo"
   },
@@ -85,5 +76,17 @@
   },
   "store.custom#comercial": {
     "path": "/comercial"
+  },
+  "store.custom#credi-walmart": {
+    "path": "/crediwalmart"
+  },
+  "store.custom#landing-tarjetas": {
+    "path": "/tarjetas-de-regalo"
+  },
+  "store.custom#consultar-saldo": {
+    "path": "/consultar-saldo"
+  },
+  "store.custom#tarjeta-electronica": {
+    "path": "/e-giftcard"
   }
 }

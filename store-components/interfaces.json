@@ -28,7 +28,10 @@
   },
   "last-cart": {
     "component": "LastCart",
-    "allowed": ["flex-layout.row", "list-context.product-list-static"]
+    "allowed": [
+      "flex-layout.row",
+      "list-context.product-list-static"
+    ]
   },
   "subtotal-content": {
     "component": "Subtotal"
@@ -51,17 +54,17 @@
   "msi-check": {
     "component": "Msi"
   },
-  "countdown-component":{
-    "component":"Countdown"
+  "countdown-component": {
+    "component": "Countdown"
   },
-  "btn-component":{
-    "component":"CreditCardBtn"
+  "btn-component": {
+    "component": "CreditCardBtn"
   },
-  "btn-electronict-card":{
-    "component":"ElectronicCard"
+  "btn-electronict-card": {
+    "component": "ElectronicCard"
   },
-  "ifram-electronict-card":{
-    "component":"IframeElectronicCard"
+  "ifram-electronict-card": {
+    "component": "IframeElectronicCard"
   },
   "check-informative": {
     "component": "CheckBoxInformative"
@@ -78,10 +81,16 @@
   "free-shipping": {
     "component": "FreeShipping"
   },
-  "consulta-saldo":{
+  "consulta-saldo": {
     "component": "ConsultaSaldo"
   },
-  "egiftcard":{
+  "egiftcard": {
     "component": "Egiftcard"
+  },
+  "login-custom": {
+    "component": "LoginCustom"
+  },
+  "credi-walmart": {
+    "component": "CrediWalmart"
   }
 }
