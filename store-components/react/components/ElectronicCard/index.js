@@ -1,10 +1,10 @@
-import React from 'react'
-import useProfile from '../../hooks/useProfile'
+import React from "react";
+import useProfile from "../../hooks/useProfile";
 
-import './global.css'
+import "./global.css";
 
 const ElectronicCard = () => {
-  const profile = useProfile()
+  const profile = useProfile();
   //console.log(profile);
   if (profile) {
     return (
@@ -13,7 +13,7 @@ const ElectronicCard = () => {
           Ver e-giftcard
         </a>
       </div>
-    )
+    );
   } else {
     return (
       <div>
@@ -21,8 +21,8 @@ const ElectronicCard = () => {
           Ver e-giftcard
         </a>
       </div>
-    )
+    );
   }
-}
+};
 
-export default ElectronicCard
+export default ElectronicCard;

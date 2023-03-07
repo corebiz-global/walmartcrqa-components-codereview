@@ -1,0 +1,26 @@
+{
+  "store.custom#consultar-saldo": {
+    "blocks": [
+      // "flex-layout.row#tarjeta-regalo-return",
+      "flex-layout.row#consultar-saldo"
+    ]
+  },
+  "flex-layout.row#consultar-saldo": {
+    "children": [
+      // "iframe#consultar-saldo"
+      "consulta-saldo"
+    ],
+    "props": {
+      "blocklas": "iframe-consultar-saldo",
+      "marginTop": 0,
+      "marginBottom": 6
+    }
+  },
+  "iframe#consultar-saldo": {
+    "props": {
+      "src": "https://web.binq.stg.walmart.com/binq",
+      "width": "1024",
+      "height": "720"
+    }
+  }
+}

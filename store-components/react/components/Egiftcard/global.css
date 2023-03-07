@@ -14,8 +14,15 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px){
-  div#iframeContainer{
+@media (max-width: 768px) {
+  div#iframeContainer {
+    overflow-y: hidden !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .iframe-consulta-saldo {
+    height: 1080px !important;
     overflow-y: hidden !important;
   }
 }

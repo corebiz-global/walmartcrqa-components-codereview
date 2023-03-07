@@ -42,8 +42,8 @@
         "src": "assets/tarjeta-de-regalo/regalo_desktop.jpg"
       }
     },
-  
-    
+
+
     "responsive-layout.desktop#landing-tarjetas": {
       "children": [
         "flex-layout.row#landing-tarjetas"
@@ -68,7 +68,7 @@
         "blockClass": ""
       }
     },
-  
+
     "flex-layout.col#landing-tarjetas-banner": {
       "children": [
         "image#banner-top"
@@ -94,7 +94,7 @@
         "preventHorizontalStretch":false
       }
     },
-  
+
     "flex-layout.col#btn-tarjeta-regalo": {
       "children": [
         "rich-text#title-tarjeta-regalo",
@@ -128,7 +128,7 @@
         "children": [
           "rich-text#title-tarjeta-fisica",
           "btn-component",
-          
+
           //"rich-text#btn-tarjeta-fisica",
           "rich-text#subtitle-tarjeta-fisica"
         ],
@@ -186,5 +186,5 @@
               }
             }
 
-   
+
 }
